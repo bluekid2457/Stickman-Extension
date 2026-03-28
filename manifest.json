@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Pet Ball",
+  "version": "1.0",
+  "description": "A little ball that bounces around the page.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
