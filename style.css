@@ -9,3 +9,137 @@
   user-select: none; /* Prevents accidental text selection while dragging */
   pointer-events: auto;
 }
+
+.screen-pet-timer-panel {
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  width: 250px;
+  max-height: 45vh;
+  overflow-y: auto;
+  background: rgba(24, 24, 30, 0.92);
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  font-family: 'Segoe UI', sans-serif;
+  pointer-events: auto;
+}
+
+.screen-pet-timer-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.screen-pet-timer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.screen-pet-timer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 7px 8px;
+}
+
+.screen-pet-timer-item-text {
+  min-width: 0;
+}
+
+.screen-pet-timer-item-label {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.screen-pet-timer-item-time {
+  font-size: 12px;
+  font-family: 'Consolas', monospace;
+  color: #9ae6b4;
+}
+
+.screen-pet-timer-remove {
+  border: none;
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background: rgba(255, 85, 85, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.screen-pet-note-card {
+  position: fixed;
+  width: 260px;
+  min-height: 120px;
+  background: #fff8b3;
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
+  font-family: 'Segoe UI', sans-serif;
+  pointer-events: auto;
+}
+
+.screen-pet-note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: move;
+  background: rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 8px 10px;
+}
+
+.screen-pet-note-title {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.screen-pet-note-close {
+  border: none;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.18);
+  color: #fff;
+  font-weight: 700;
+}
+
+.screen-pet-note-body {
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.screen-pet-zap-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.screen-pet-zap-line {
+  position: fixed;
+  height: 2px;
+  background: linear-gradient(90deg, #fff176, #00e5ff);
+  transform-origin: 0 50%;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 14px rgba(0, 229, 255, 0.6);
+  pointer-events: none;
+}

@@ -1,13 +1,35 @@
 {
   "manifest_version": 3,
-  "name": "Screen Pet Ball",
+  "name": "Screen Pet Ball2",
   "version": "1.0",
   "description": "A little ball that bounces around the page.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "css": ["style.css"],
-      "js": ["content.js"]
+      "js": [
+        "core/namespace.js",
+        "core/config.js",
+        "core/state.js",
+        "core/assets.js",
+        "core/dom.js",
+        "core/ui.js",
+        "core/elements.js",
+        "core/ai.js",
+        "core/input.js",
+        "core/actions.js",
+        "modes/brains.js",
+        "core/physics.js",
+        "core/animation.js",
+        "core/loop.js",
+        "core/bootstrap.js",
+        "content.js"
+      ]
     }
   ]
 }

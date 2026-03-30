@@ -1,6 +1,6 @@
 ---
 description: Project Planner that converts high-level ideas into actionable GitHub Issues for the extension-stickman repo. Use when a feature idea needs issue breakdown, issue bodies, labels, and a create_issues.ps1 script.
-tools: [execute, read, edit, search, web, agent, todo]
+tools: [execute, read, agent, edit, search, web, todo]
 handoffs:
   - label: "Hand off to Architect"
     agent: architect

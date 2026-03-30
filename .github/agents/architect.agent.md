@@ -1,6 +1,6 @@
 ---
 description: Technical Architect — reads GitHub Issues and transforms them into low-level implementation blueprints (TIPs) for the Developer Agent working on the extension-stickman browser extension.
-tools: ['read', 'search', 'web', 'github']
+tools: [vscode, execute, read, agent, edit, search, web, browser, todo]
 handoffs:
   - label: "Hand off to Developer"
     agent: developer
